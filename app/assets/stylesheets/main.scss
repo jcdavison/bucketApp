@@ -1,0 +1,96 @@
+$carbon: #353232;
+$white: white;
+$green: rgb(75, 145, 70);
+$light_green: rgba(120, 151, 120, 0.2);
+$very_light_green: rgba(120, 151, 120, 0.1);
+$light_grey: rgba(121, 121, 151, .5);
+$light_blue: hsla(210, 68%, 42%, .5);
+$very_light_blue: hsla(210, 68%, 42%, .1);
+$pale_blue: hsl(199, 47%, 93%);
+$ultra_light_blue: hsl(214, 47%, 97%);
+$very_light_grey: rgba(121, 121, 151, .3);
+
+@mixin carbon {
+  color: $carbon;
+}
+
+.carbon {
+  @include carbon;
+}
+
+#authorization {
+  margin-top: 10em;
+}
+
+.no-float {
+  float: none !important;
+}
+
+.centered {
+  text-align: center;
+}
+
+.borders {
+  border: 1px solid gray;
+}
+
+.full-bleed {
+  width: 100% !important;
+}
+
+.margined {
+  margin: .8em
+}
+
+
+button.btn-default.signup, a.btn-default.signup {
+  border-color: $carbon;
+  background-color: $carbon;
+  color: $white;
+  &:hover {
+    border-color: $green;
+    background-color: $green;
+    color: $white;
+  }
+}
+
+@mixin pointer {
+  cursor: pointer !important;
+}
+
+.pointer {
+  @include pointer
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+#feed {
+  margin-top: 8em;
+}
+
+.photo-element {
+  max-height: 20em;
+  max-width: 20em;
+  padding: .5em;
+}
+
+#addPic {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 1000px;
+  background-color: $carbon;
+  cursor: pointer;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 2px;
+}

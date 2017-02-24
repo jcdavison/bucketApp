@@ -1,0 +1,11 @@
+@import 'main';
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+body {
+  background-color: #fafafa;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
